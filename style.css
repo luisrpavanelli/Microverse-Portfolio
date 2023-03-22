@@ -458,8 +458,13 @@ hr.arcseparator {
 }
 
 form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
   width: 100%;
   margin: auto;
+  width: 684px;
 }
 
 input,
@@ -750,7 +755,21 @@ input.activeerror {
   .messagedivision input,
   textarea,
   #messagebutton {
-    float: left;
+    float:none ;
+  }
+
+  .messagedivision input,
+  #firstname {
+       width: 50%;
+       margin-right: 50%;
+       font-style: italic;
+  }
+
+  .messagedivision input,
+  #lastname {
+       width: 50%;
+       margin-right: 50%;
+       font-style: italic;
   }
 
   .messagedivision input,
