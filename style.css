@@ -758,6 +758,17 @@ input.activeerror {
     float:none ;
   }
 
+  .messagedivision label,
+  textarea,
+  #firstname {
+    font-style: italic ;
+  }
+  .messagedivision label,
+  textarea,
+  #lastname {
+    font-style: italic ;
+  }
+
   .messagedivision input,
   #firstname {
        width: 50%;
