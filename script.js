@@ -153,7 +153,7 @@ const inputLastname = document.getElementById('lastname');
 const inputAddress = document.getElementById('address');
 const inputFeedback = document.getElementById('feedback');
 // Load any saved data from local storage
-const savedData = JSON.parse(localStorage.getItem('formData'));
+const savedData = JSON.parse(localStorage.getItem('Data'));
 // If there is saved data, pre-fill the input fields
 if (savedData) {
   inputFirstname.value = savedData.firstname;
@@ -174,5 +174,5 @@ function saveFormData() {
     address: inputAddress.value,
     feedback: inputFeedback.value
   };
-  localStorage.setItem('formData', JSON.stringify(formData));
+  localStorage.setItem('Data', JSON.stringify(formData));
 }
