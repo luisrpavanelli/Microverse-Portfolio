@@ -463,10 +463,9 @@ form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   width: 100%;
   margin: auto;
-  width: 684px;
 }
 
 input,
@@ -758,32 +757,33 @@ input.activefail {
   .messagedivision input,
   textarea,
   #messagebutton {
-    float:none ;
+    float: none;
   }
 
   .messagedivision label,
   textarea,
   #firstname {
-    font-style: italic ;
+    font-style: italic;
   }
+
   .messagedivision label,
   textarea,
   #lastname {
-    font-style: italic ;
+    font-style: italic;
   }
 
   .messagedivision input,
   #firstname {
-       width: 50%;
-       margin-right: 50%;
-       font-style: italic;
+    width: 50%;
+    margin-right: 50%;
+    font-style: italic;
   }
 
   .messagedivision input,
   #lastname {
-       width: 50%;
-       margin-right: 50%;
-       font-style: italic;
+    width: 50%;
+    margin-right: 50%;
+    font-style: italic;
   }
 
   .messagedivision input,
