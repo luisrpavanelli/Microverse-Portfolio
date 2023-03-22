@@ -29,7 +29,7 @@ const projectsList = [
   {
     name: 'Project One',
     description: 'Briefly introduce your project and its key features.',
-    technologies: ['language one', 'language two', 'language three', 'language four'],
+    technologies: ['software one', 'software two', 'software three', 'software four'],
     feturedImageMobile: 'mobilepeojectpreview.jpg',
     feauturedImageDesktop: 'desktopSnapshot.svg',
     sharepoint: 'https://www.google.com/',
@@ -38,7 +38,7 @@ const projectsList = [
   {
     name: 'Project Two',
     description: 'Briefly introduce your project and its key features.',
-    technologies: ['language one', 'language two', 'language three', 'language four'],
+    technologies: ['software one', 'software two', 'software three', 'software four'],
     feturedImageMobile: 'idplaceholder.png',
     feauturedImageDesktop: 'idplaceholder.png',
     sharepoint: '#',
@@ -47,7 +47,7 @@ const projectsList = [
   {
     name: 'Project Three',
     description: 'Briefly introduce your project and its key features.',
-    technologies: ['language one', 'language two', 'language three', 'language four'],
+    technologies: ['software one', 'software two', 'software three', 'software four'],
     feturedImageMobile: 'idplaceholder.png',
     feauturedImageDesktop: 'idplaceholder.png',
     sharepoint: '#',
@@ -56,7 +56,7 @@ const projectsList = [
   {
     name: 'Project Four',
     description: 'Briefly introduce your project and its key features.',
-    technologies: ['language one', 'language two', 'language three', 'language four'],
+    technologies: ['software one', 'software two', 'software three', 'software four'],
     feturedImageMobile: 'idplaceholder.png',
     feauturedImageDesktop: 'idplaceholder.png',
     sharepoint: '#',
@@ -65,7 +65,7 @@ const projectsList = [
   {
     name: 'Project Five',
     description: 'Briefly introduce your project and its key features.',
-    technologies: ['language one', 'language two', 'language three', 'language four'],
+    technologies: ['software one', 'software two', 'software three', 'software four'],
     feturedImageMobile: 'idplaceholder.png',
     feauturedImageDesktop: 'idplaceholder.png',
     sharepoint: '#',
@@ -74,7 +74,7 @@ const projectsList = [
   {
     name: 'Project Six',
     description: 'Briefly introduce your project and its key features.',
-    technologies: ['language one', 'language two', 'language three', 'language four'],
+    technologies: ['software one', 'software two', 'software three', 'software four'],
     feturedImageMobile: 'idplaceholder.png',
     feauturedImageDesktop: 'idplaceholder.png',
     sharepoint: '#',
