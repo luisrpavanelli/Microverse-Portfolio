@@ -147,32 +147,32 @@ messageform.addEventListener('submit', (e) => {
   e.preventDefault();
   validateInputs();
 });
+const inputFeedback = document.getElementById('feedback');
 // Get references to the input fields LocalStorage
 const inputFirstname = document.getElementById('firstname');
 const inputLastname = document.getElementById('lastname');
 const inputAddress = document.getElementById('address');
-const inputFeedback = document.getElementById('feedback');
 // Load any saved data from local storage
-const savedData = JSON.parse(localStorage.getItem('Data'));
+const savedInput = JSON.parse(localStorage.getItem('formInput'));
 // If there is saved data, pre-fill the input fields
-if (savedData) {
-  inputFirstname.value = savedData.firstname;
-  inputLastname.value = savedData.lastname;
-  inputAddress.value = savedData.address;
-  inputFeedback.value = savedData.feedback;
+if (savedInput) {
+  inputFirstname.value = savedInput.firstname;
+  inputLastname.value = savedInput.lastname;
+  inputAddress.value = savedInput.address;
+  inputFeedback.value = savedInput.feedback;
 }
-// Add event listeners to the input fields to save changes to local storage
-inputFirstname.addEventListener('input', savedData);
-inputLastname.addEventListener('input', savedData);
-inputAddress.addEventListener('input', savedData);
-inputFeedback.addEventListener('input', savedData);
 // Function to save form data to local storage
-function savedData() {
-  const MessageData = {
+function saveformInput() {
+  const formInput = {
     firstname: inputFirstname.value,
     lastname: inputLastname.value,
     address: inputAddress.value,
     feedback: inputFeedback.value,
   };
-  localStorage.setItem('Data', JSON.stringify(MessageData));
+  localStorage.setItem('formInput', JSON.stringify(formInput));
 }
+// Add event listeners to the input fields to save changes to local storage
+inputFirstname.addEventListener('input', saveformInput);
+inputLastname.addEventListener('input', saveformInput);
+inputAddress.addEventListener('input', saveformInput);
+inputFeedback.addEventListener('input', saveformInput);
