@@ -148,25 +148,29 @@ messageform.addEventListener('submit', (e) => {
   validateInputs();
 });
 // Get references to the input fields LocalStorage
-const inputCompletename = document.getElementById('completename');
+const inputFirstname = document.getElementById('firstname');
+const inputLastname = document.getElementById('lastname');
 const inputAddress = document.getElementById('address');
 const inputFeedback = document.getElementById('feedback');
 // Load any saved data from local storage
 const savedData = JSON.parse(localStorage.getItem('formData'));
 // If there is saved data, pre-fill the input fields
 if (savedData) {
-  inputCompletename.value = savedData.completename;
+  inputFirstname.value = savedData.firstname;
+  inputLastname.value = savedData.lastname;
   inputAddress.value = savedData.address;
   inputFeedback.value = savedData.feedback;
 }
 // Add event listeners to the input fields to save changes to local storage
-inputCompletename.addEventListener('input', saveFormData);
+inputFirstname.addEventListener('input', saveFormData);
+inputLastname.addEventListener('input', saveFormData);
 inputAddress.addEventListener('input', saveFormData);
 inputFeedback.addEventListener('input', saveFormData);
 // Function to save form data to local storage
 function saveFormData() {
   const formData = {
-    completename: inputCompletename.value,
+    firstname: inputFirstname.value,
+    lastname: inputLastname.value,
     address: inputAddress.value,
     feedback: inputFeedback.value
   };
