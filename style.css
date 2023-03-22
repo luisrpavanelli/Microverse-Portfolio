@@ -77,7 +77,7 @@ p {
 }
 
 .shadowed_surface.active {
-  position:absolute;
+  position: absolute;
   height: 100vh;
   width: 100%;
   background-color: #e5e5e5;
@@ -118,7 +118,7 @@ nav {
 .button_switch .stripe {
   height: 2px;
   width: 100%;
-  background-color: #28352F;
+  background-color: #28352f;
   border-radius: 10px;
 }
 
@@ -178,7 +178,7 @@ nav {
 }
 
 #Spotlight {
-  color: #1E488F;
+  color: #1e488f;
 }
 
 .smsymbols {
@@ -306,7 +306,7 @@ nav {
 }
 
 .pattern-lines button {
-  background-color: #1E488F;
+  background-color: #1e488f;
   color: white;
   font-size: 1.7rem;
   width: 140px;
@@ -388,7 +388,7 @@ nav {
   padding: 12px;
   border-radius: 4px;
   border: none;
-  background-color: #1E488F;
+  background-color: #1e488f;
   transition: 0.5s;
 }
 
@@ -398,7 +398,7 @@ nav {
 }
 
 .button:active {
-  background-color: #0A2759;
+  background-color: #0a2759;
   box-shadow: none;
 }
 
@@ -428,7 +428,7 @@ nav {
 }
 
 .storydeckholder .badge {
-  color: #1E488F;
+  color: #1e488f;
 }
 
 .storydeckholder img {
@@ -436,7 +436,7 @@ nav {
 }
 
 hr.arcseparator {
-  border-top: 4px solid #1E488F;
+  border-top: 4px solid #1e488f;
   border-radius: 5px;
   width: 50px;
   margin: 24px auto;
@@ -473,7 +473,7 @@ input,
 
 input:focus,
 textarea:focus {
-  outline: 1px solid #1E488F;
+  outline: 1px solid #1e488f;
 }
 
 input.activeerror {
@@ -542,7 +542,7 @@ input.activeerror {
   .explorer li::after {
     content: "";
     position: absolute;
-    background-color: #0A2759;
+    background-color: #0a2759;
     height: 3px;
     width: 0%;
     left: 3rem;
@@ -556,7 +556,7 @@ input.activeerror {
   }
 
   .explorer a {
-    color: #1E488F;
+    color: #1e488f;
     text-decoration: none;
     position: relative;
   }
@@ -596,7 +596,7 @@ input.activeerror {
   .projects .badge:hover {
     color: #182a4d;
     transform: scale(1.15, 1.15);
-    background-color: #E2EDFF;
+    background-color: #e2edff;
     cursor: pointer;
   }
 
@@ -619,10 +619,9 @@ input.activeerror {
     width: 920px;
     height: 1083px;
     padding: 2rem;
-    radius: 8px;
+    border-radius: 8px;
     z-index: 15;
     display: flex;
-    border-radius: 5px;
     overflow: scroll;
   }
 
@@ -681,7 +680,7 @@ input.activeerror {
 
   .pattern-lines button {
     cursor: pointer;
-    background-color: #1E488F;
+    background-color: #1e488f;
     color: white;
     font-size: 1.7rem;
     width: 150px;

@@ -3,8 +3,8 @@ const buttonswitch = document.getElementsByClassName('button_switch')[0];
 const wayFinderlines = document.getElementsByClassName('navigation_options')[0];
 const shadowedsurface = document.getElementsByClassName('shadowed_surface')[0];
 const closeMobileButton = document.getElementsByClassName('closemob-table')[0];
-const explorer = document.getElementsByClassName('explorer');[0];
-  buttonswitch.addEventListener('click', () => {
+const explorer = document.getElementsByClassName('explorer');
+buttonswitch.addEventListener('click', () => {
   wayFinderlines.classList.toggle('active');
   shadowedsurface.classList.toggle('active');
   buttonswitch.classList.toggle('active');
@@ -83,18 +83,15 @@ const projectsList = [
 ];
 // #Pattern
 const patternPopUp = document.getElementsByClassName('patternholder')[0];
-const coverupBg = document.getElementById('coverup');[0];
-const liveL = document.getElementById('see-live');[0];
-const sourceL = document.getElementById('see-source');[0];
+const coverupBg = document.getElementById('coverup');
+const liveL = document.getElementById('see-live');
+const sourceL = document.getElementById('see-source');
 let currentScrollPosition = window.scrollY;
 function Showpattern(index) {
-
   const project = projectsList[index];
   currentScrollPosition = window.scrollY;
- 
   patternPopUp.classList.toggle('active');
   coverupBg.classList.toggle('active');
-  
   window.scrollTo(0, 0);
   patternPopUp.querySelector('h3').textContent = project.name;
   patternPopUp.querySelectorAll('.badge').forEach((badge, index) => {
@@ -104,8 +101,8 @@ function Showpattern(index) {
   liveL.setAttribute('onclick', `window.location.href='${project.livelink}'`);
   sourceL.setAttribute('onclick', `window.location.href='${project.sourcelink}'`);
 }
-const projectiddesing = document.getElementById('iddesing');[0];
-const projectsholder = document.querySelector('.projects');[0];
+const projectiddesing = document.getElementById('iddesing');
+const projectsholder = document.querySelector('.projects');
 for (let i = 0; i < projectsList.length; i += 1) {
   const projectid = projectiddesing.content.cloneNode(true);
   const project = projectsList[i];
