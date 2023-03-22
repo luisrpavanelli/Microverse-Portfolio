@@ -69,7 +69,7 @@ My portfolio project is a showcase of my skills and abilities in Software Develo
 
 ## 🚀 Preview Link <a name="preview-link"></a>
 
-- [Preview Link] https://htmlpreview.github.io/?https://github.com/luisrpavanelli/Microverse-Portfolio/blob/microverseportfolio/index.html
+- [Preview Link] (https://htmlpreview.github.io/?https://github.com/luisrpavanelli/Microverse-Portfolio/blob/microverseportfolio/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -99,7 +99,7 @@ To run this project, you will need a web browser, a text editor, and a local web
 
 - GitHub: [@smunoz](https://github.com/smunoz)
 - Twitter: [@Santiag24209785](https://twitter.com/Santiag24209785)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/santiagomuñoz
+- LinkedIn: [LinkedIn](https://linkedin.com/in/santiagomuñoz)
 
 👤 **Marco Almada**
 
