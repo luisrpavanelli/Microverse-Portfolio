@@ -162,17 +162,17 @@ if (savedData) {
   inputFeedback.value = savedData.feedback;
 }
 // Add event listeners to the input fields to save changes to local storage
-inputFirstname.addEventListener('input', saveData);
-inputLastname.addEventListener('input', saveData);
-inputAddress.addEventListener('input', saveData);
-inputFeedback.addEventListener('input', saveData);
+inputFirstname.addEventListener('input', savedData);
+inputLastname.addEventListener('input', savedData);
+inputAddress.addEventListener('input', savedData);
+inputFeedback.addEventListener('input', savedData);
 // Function to save form data to local storage
-function saveData() {
-  const Data = {
+function savedData() {
+  const MessageData = {
     firstname: inputFirstname.value,
     lastname: inputLastname.value,
     address: inputAddress.value,
-    feedback: inputFeedback.value
+    feedback: inputFeedback.value,
   };
-  localStorage.setItem('Data', JSON.stringify(Data));
+  localStorage.setItem('Data', JSON.stringify(MessageData));
 }
