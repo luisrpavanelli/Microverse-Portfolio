@@ -484,17 +484,18 @@ textarea:focus {
 }
 
 input.activefail {
-  outline: 1px solid red;
+  outline: 2px solid rgb(206, 21, 21);
 }
 
 .fail {
-  color: red;
+  color: rgb(216, 21, 21);
   font-size: 1.5rem;
   width: 100%;
   height: 30px;
   display: flex;
   align-items: center;
   text-align: left;
+  font-style: bold;
 }
 
 .message .button {
