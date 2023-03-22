@@ -463,7 +463,7 @@ form {
 }
 
 input,
-#comments {
+#feedback {
   width: 85%;
   padding: 15px 16px;
   border: 1px solid #d0d9d4;
@@ -749,12 +749,12 @@ input.activeerror {
 
   .messagedivision input,
   textarea,
-  #formbutton {
+  #messagebutton {
     float: left;
   }
 
   .messagedivision input,
-  #comments {
+  #feedback {
     width: 100%;
   }
 
