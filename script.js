@@ -125,21 +125,21 @@ function Camouflagepattern() { // eslint-disable-line no-unused-vars
 const messageform = document.getElementsByClassName('message_form')[0];
 const addressEmail = document.getElementById('address');
 const setError = (message) => {
-  const errorholder = messageform.querySelector('.error');
-  errorholder.innerHTML = message;
-  errorholder.classList.add('error');
+  const failholder = messageform.querySelector('.fail');
+  failholder.innerHTML = message;
+  failholder.classList.add('fail');
 };
 const validateInputs = () => {
   const sendingEmail = addressEmail.value;
   if (!(sendingEmail === sendingEmail.toLowerCase())) {
     setError('Please ensure that your email address is in all lowercase letters.');
-    addressEmail.classList.toggle('activeerror');
+    addressEmail.classList.toggle('activefail');
   } else if (sendingEmail === '') {
     setError('Please enter your email address, the field cannot be left blank.');
-    addressEmail.classList.toggle('activeerror');
+    addressEmail.classList.toggle('activefail');
   } else {
     setError('');
-    addressEmail.classList.toggle('activeerror');
+    addressEmail.classList.toggle('activefail');
     messageform.submit();
   }
 };

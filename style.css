@@ -483,11 +483,11 @@ textarea:focus {
   outline: 1px solid #1e488f;
 }
 
-input.activeerror {
+input.activefail {
   outline: 1px solid red;
 }
 
-.error {
+.fail {
   color: red;
   font-size: 1.5rem;
   width: 100%;
