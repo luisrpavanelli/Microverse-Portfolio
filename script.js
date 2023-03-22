@@ -28,63 +28,63 @@ for (let i = 0; i < explorer.length; i += 1) {
 const projectsList = [
   {
     name: 'Project One',
-    description: 'your description here.',
+    description: 'Briefly introduce your project and its key features.',
     technologies: ['language one', 'language two', 'language three', 'language four'],
     feturedImageMobile: 'mobilepeojectpreview.jpg',
     feauturedImageDesktop: 'desktopSnapshot.svg',
-    livelink: 'https://www.google.com/',
+    sharepoint: 'https://www.google.com/',
     sourcelink: 'https://www.github.com/',
   },
   {
     name: 'Project Two',
-    description: 'your description here',
+    description: 'Briefly introduce your project and its key features.',
     technologies: ['language one', 'language two', 'language three', 'language four'],
     feturedImageMobile: 'idplaceholder.png',
     feauturedImageDesktop: 'idplaceholder.png',
-    livelink: '#',
+    sharepoint: '#',
     sourcelink: '#',
   },
   {
     name: 'Project Three',
-    description: 'your description here',
+    description: 'Briefly introduce your project and its key features.',
     technologies: ['language one', 'language two', 'language three', 'language four'],
     feturedImageMobile: 'idplaceholder.png',
     feauturedImageDesktop: 'idplaceholder.png',
-    livelink: '#',
+    sharepoint: '#',
     sourcelink: '#',
   },
   {
     name: 'Project Four',
-    description: 'your description here',
+    description: 'Briefly introduce your project and its key features.',
     technologies: ['language one', 'language two', 'language three', 'language four'],
     feturedImageMobile: 'idplaceholder.png',
     feauturedImageDesktop: 'idplaceholder.png',
-    livelink: '#',
+    sharepoint: '#',
     sourcelink: '#',
   },
   {
     name: 'Project Five',
-    description: 'your description here',
+    description: 'Briefly introduce your project and its key features.',
     technologies: ['language one', 'language two', 'language three', 'language four'],
     feturedImageMobile: 'idplaceholder.png',
     feauturedImageDesktop: 'idplaceholder.png',
-    livelink: '#',
+    sharepoint: '#',
     sourcelink: '#',
   },
   {
     name: 'Project Six',
-    description: 'your description here',
+    description: 'Briefly introduce your project and its key features.',
     technologies: ['language one', 'language two', 'language three', 'language four'],
     feturedImageMobile: 'idplaceholder.png',
     feauturedImageDesktop: 'idplaceholder.png',
-    livelink: '#',
+    sharepoint: '#',
     sourcelink: '#',
   },
 ];
 // #Pattern
 const patternPopUp = document.getElementsByClassName('patternholder')[0];
 const coverupBg = document.getElementById('coverup');
-const liveL = document.getElementById('see-live');
+const shareP = document.getElementById('see-live');
 const sourceL = document.getElementById('see-source');
 let currentScrollPosition = window.scrollY;
 function Showpattern(index) {
@@ -98,7 +98,7 @@ function Showpattern(index) {
     badge.textContent = project.technologies[index];
   });
   patternPopUp.querySelector('p').textContent = project.description;
-  liveL.setAttribute('onclick', `window.location.href='${project.livelink}'`);
+  shareP.setAttribute('onclick', `window.location.href='${project.sharepoint}'`);
   sourceL.setAttribute('onclick', `window.location.href='${project.sourcelink}'`);
 }
 const projectiddesing = document.getElementById('iddesing');
@@ -122,28 +122,53 @@ function Camouflagepattern() { // eslint-disable-line no-unused-vars
   window.scrollTo(0, currentScrollPosition);
 }
 // #Formulary
-const form = document.getElementsByClassName('message_form')[0];
-const emailField = document.getElementById('email');
+const messageform = document.getElementsByClassName('message_form')[0];
+const addressEmail = document.getElementById('address');
 const setError = (message) => {
-  const errorholder = form.querySelector('.error');
+  const errorholder = messageform.querySelector('.error');
   errorholder.innerHTML = message;
   errorholder.classList.add('error');
 };
 const validateInputs = () => {
-  const emailSubmission = emailField.value;
-  if (!(emailSubmission === emailSubmission.toLowerCase())) {
-    setError('Your email needs to be lowercase');
-    emailField.classList.toggle('activeerror');
-  } else if (emailSubmission === '') {
-    setError('Your email can not be empty');
-    emailField.classList.toggle('activeerror');
+  const sendingEmail = addressEmail.value;
+  if (!(sendingEmail === sendingEmail.toLowerCase())) {
+    setError('Please ensure that your email address is in all lowercase letters.');
+    addressEmail.classList.toggle('activeerror');
+  } else if (sendingEmail === '') {
+    setError('Please enter your email address, the field cannot be left blank.');
+    addressEmail.classList.toggle('activeerror');
   } else {
     setError('');
-    emailField.classList.toggle('activeerror');
-    form.submit();
+    addressEmail.classList.toggle('activeerror');
+    messageform.submit();
   }
 };
-form.addEventListener('submit', (e) => {
+messageform.addEventListener('submit', (e) => {
   e.preventDefault();
   validateInputs();
 });
+// Get references to the input fields LocalStorage
+const inputCompletename = document.getElementById('completename');
+const inputAddress = document.getElementById('address');
+const inputFeedback = document.getElementById('feedback');
+// Load any saved data from local storage
+const savedData = JSON.parse(localStorage.getItem('formData'));
+// If there is saved data, pre-fill the input fields
+if (savedData) {
+  inputCompletename.value = savedData.completename;
+  inputAddress.value = savedData.address;
+  inputFeedback.value = savedData.feedback;
+}
+// Add event listeners to the input fields to save changes to local storage
+inputCompletename.addEventListener('input', saveFormData);
+inputAddress.addEventListener('input', saveFormData);
+inputFeedback.addEventListener('input', saveFormData);
+// Function to save form data to local storage
+function saveFormData() {
+  const formData = {
+    completename: inputCompletename.value,
+    address: inputAddress.value,
+    feedback: inputFeedback.value
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
