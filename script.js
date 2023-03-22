@@ -33,7 +33,7 @@ const projectsList = [
     feturedImageMobile: 'mobilepeojectpreview.jpg',
     feauturedImageDesktop: 'desktopSnapshot.svg',
     sharepoint: 'https://www.google.com/',
-    sourcelink: 'https://www.github.com/',
+    reference: 'https://www.github.com/',
   },
   {
     name: 'Project Two',
@@ -42,7 +42,7 @@ const projectsList = [
     feturedImageMobile: 'idplaceholder.png',
     feauturedImageDesktop: 'idplaceholder.png',
     sharepoint: '#',
-    sourcelink: '#',
+    reference: '#',
   },
   {
     name: 'Project Three',
@@ -51,7 +51,7 @@ const projectsList = [
     feturedImageMobile: 'idplaceholder.png',
     feauturedImageDesktop: 'idplaceholder.png',
     sharepoint: '#',
-    sourcelink: '#',
+    reference: '#',
   },
   {
     name: 'Project Four',
@@ -60,7 +60,7 @@ const projectsList = [
     feturedImageMobile: 'idplaceholder.png',
     feauturedImageDesktop: 'idplaceholder.png',
     sharepoint: '#',
-    sourcelink: '#',
+    reference: '#',
   },
   {
     name: 'Project Five',
@@ -69,7 +69,7 @@ const projectsList = [
     feturedImageMobile: 'idplaceholder.png',
     feauturedImageDesktop: 'idplaceholder.png',
     sharepoint: '#',
-    sourcelink: '#',
+    reference: '#',
   },
   {
     name: 'Project Six',
@@ -78,14 +78,14 @@ const projectsList = [
     feturedImageMobile: 'idplaceholder.png',
     feauturedImageDesktop: 'idplaceholder.png',
     sharepoint: '#',
-    sourcelink: '#',
+    reference: '#',
   },
 ];
 // #Pattern
 const patternPopUp = document.getElementsByClassName('patternholder')[0];
 const coverupBg = document.getElementById('coverup');
 const shareP = document.getElementById('see-live');
-const sourceL = document.getElementById('see-source');
+const reference = document.getElementById('see-source');
 let currentScrollPosition = window.scrollY;
 function Showpattern(index) {
   const project = projectsList[index];
@@ -99,7 +99,7 @@ function Showpattern(index) {
   });
   patternPopUp.querySelector('p').textContent = project.description;
   shareP.setAttribute('onclick', `window.location.href='${project.sharepoint}'`);
-  sourceL.setAttribute('onclick', `window.location.href='${project.sourcelink}'`);
+  reference.setAttribute('onclick', `window.location.href='${project.reference}'`);
 }
 const projectiddesing = document.getElementById('iddesing');
 const projectsholder = document.querySelector('.projects');
