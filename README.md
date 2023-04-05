@@ -69,7 +69,7 @@ My portfolio project is a showcase of my skills and abilities in Software Develo
 
 ## 🚀 Preview Link <a name="preview-link"></a>
 
-- [Preview Link] (https://luisrpavanelli.github.io/luisrpavanelli-Microverse-Portfolio.github.io)
+- [Preview Link] (https://luisrpavanelli.github.io/luisrpavanelli-Microverse-Portfolio.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
